@@ -1,0 +1,57 @@
+.caja{
+    border-radius: 6px;
+    height: 40px;
+    width: 80px;
+    margin: 60px auto;
+    background-color: aqua;
+}
+.caja:hover{
+    transform: scale(6);
+}
+
+.circulo1{
+    border-radius: 90%;
+    height: 50px;
+    width: 50px;
+    margin: 60px auto;
+    background-color: orange;
+}
+
+.circulo1:hover{
+    transform: scale(6);
+    transition: all 2s;
+}
+.cuadrado1, .cuadrado2{
+    width: 50px;
+    height: 50px;
+   
+}
+.cuadrado1{
+    background-color: blueviolet;
+    transition: 2s ease-in;
+}
+.cuadrado2{
+    background-color: brown;
+    transition: 3s ease-in-out;
+}
+
+.carrera:hover .cuadrado1,
+.carrera:hover .cuadrado2{
+ transform: translateX(300px);
+}
+
+.a{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.a:hover{
+    animation: cambiar-color 6s;
+}
+@keyframes cambiar-color{
+    0%{background-color: blueviolet;}
+    15%{border-radius: 90%;}  
+    50%{background-color: brown}
+    90%{width: 300px;}
+}
